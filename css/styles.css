@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height:100%;
+  /* height: 150%; */
+}
+/* img {
+opacity: 1;
+} */
+
+body {
+  min-height:100%;
+  width:100vw;
+  padding: 1em 0;
+  /* border:1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color:white;
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
+  line-height: 1.4;
+  /* background image with slightly darker cover */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../img/potLuckPhoto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+
+.attendees {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-family: "Oswald", sans-serif;
+}
+
+.add-guest,
+.guest-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-guest {
+  margin-top: 1em;
+}
+
+.add-guest label {
+  margin-bottom: 1em;
+}
+
+.add-guest input {
+  width: 65vw;
+  padding: 0.25em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.fa-envelope {
+  color: #ccc;
+}
+
+button {
+  align-self: center;
+  margin: 2em 0;
+  padding: 0.5em 1.5em;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  background-color: tomato;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input {
+  border: 1px solid #292929;
+}
+
+input:focus {
+  border: 2px solid;
+  background-color: mintcream;
+}
+
+.guest-list {
+  color:white;
+  /* color: #292929; */
+}
+
+.assigned-items li {
+  font-size: 0.9em;
+  margin: 0.45em 0;
+  background-color: rgba(247, 250, 250,0.8);
+  color: tomato;
+  font-weight: bold;
+  color: 292929;
+}
+
+.guest-list,
+.assigned-items {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.guest-list li,
+.assigned-items li {
+  padding: 0.5em 0;
+}
+
+.items-list-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em 0;
+}
+.assigned-items {
+  width: 90%;
+  max-width: 400px;
+}
+
+#topH3{
+  font-size: 0.6em;
+
+}
+
+footer {
+  width: 100%;
+  padding: 2em 0;
+}
+
+h3{
+  text-align:center;
+  width:100%;
+  line-height:1.5;
+  font-size:0.5em;
+  bottom:0;
+}
+
+/* BREAK POINTS */
+@media screen and (min-width: 768px) {
+  body{
+    height:100vh;
+  }
+  .container {
+    justify-content: space-between;
+  }
+
+  h1{
+    margin-top:-10px;
+    margin-bottom:65px;
+  }
+  #topH3 {
+    font-size: 0.9em;
+    margin: 25px 0px 25px 0px;
+}
+
+.add-guest input {
+  width: 45vw;
+}
+
+  .guest-list {
+    width: 70%;
+  }
+
+  div.alert h3{
+    font-size:1em;
+  }
+
+  h3#photoRights{
+    font-size:0.7em;
+    margin:35px 0px -10px 0px;
+
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .add-guest input {
+      width: 25vw;
+  }
+
+}
